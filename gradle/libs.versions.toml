@@ -1,0 +1,44 @@
+[versions]
+agp = "8.5.2"
+comWillowtreeappsHyperionHyperionCore = "0.9.38"
+kotlin = "1.9.0"
+coreKtx = "1.10.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+lifecycleExtensions = "2.2.0"
+material = "1.10.0"
+willowtreeappsHyperionCoreNoOp = "0.9.38"
+willowtreeappsHyperionAttr = "0.9.38"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-extensions = { module = "androidx.lifecycle:lifecycle-extensions", version.ref = "lifecycleExtensions" }
+com-willowtreeapps-hyperion-hyperion-attr = { module = "com.willowtreeapps.hyperion:hyperion-attr", version.ref = "willowtreeappsHyperionAttr" }
+com-willowtreeapps-hyperion-hyperion-build-config9 = { module = "com.willowtreeapps.hyperion:hyperion-build-config", version.ref = "comWillowtreeappsHyperionHyperionCore" }
+com-willowtreeapps-hyperion-hyperion-core-no-op = { module = "com.willowtreeapps.hyperion:hyperion-core-no-op", version.ref = "willowtreeappsHyperionCoreNoOp" }
+com-willowtreeapps-hyperion-hyperion-core3 = { module = "com.willowtreeapps.hyperion:hyperion-core", version.ref = "comWillowtreeappsHyperionHyperionCore" }
+hyperion-crash = { module = "com.willowtreeapps.hyperion:hyperion-crash", version.ref = "comWillowtreeappsHyperionHyperionCore" }
+hyperion-disk = { module = "com.willowtreeapps.hyperion:hyperion-disk", version.ref = "comWillowtreeappsHyperionHyperionCore" }
+hyperion-geiger-counter = { module = "com.willowtreeapps.hyperion:hyperion-geiger-counter", version.ref = "comWillowtreeappsHyperionHyperionCore" }
+hyperion-measurement = { module = "com.willowtreeapps.hyperion:hyperion-measurement", version.ref = "comWillowtreeappsHyperionHyperionCore" }
+hyperion-phoenix = { module = "com.willowtreeapps.hyperion:hyperion-phoenix", version.ref = "comWillowtreeappsHyperionHyperionCore" }
+hyperion-recorder = { module = "com.willowtreeapps.hyperion:hyperion-recorder", version.ref = "comWillowtreeappsHyperionHyperionCore" }
+hyperion-shared-preferences = { module = "com.willowtreeapps.hyperion:hyperion-shared-preferences", version.ref = "comWillowtreeappsHyperionHyperionCore" }
+hyperion-timber = { module = "com.willowtreeapps.hyperion:hyperion-timber", version.ref = "comWillowtreeappsHyperionHyperionCore" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+
