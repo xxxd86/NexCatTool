@@ -1,6 +1,8 @@
 package com.nexify.layoutspeclibrary.base
 
 import android.content.Context
+import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.view.View
@@ -39,6 +41,12 @@ class DevelopFloatingWindow(context: Context) : FloatingWindow<ActivityFloatItem
                         ViewGroup.LayoutParams.WRAP_CONTENT,
                         ViewGroup.LayoutParams.WRAP_CONTENT
                     )
+                    mBinding.attrButton.setOnClickListener { it->
+                        //打开布局检测
+                        Toast.makeText(it.context,"开启布局检测",Toast.LENGTH_SHORT).show()
+                        val intent = Intent("com.example.ADD_OVERLAY")
+                        it.context.sendBroadcast(intent)
+                    }
                     expendView = mBinding.root
                     params.leftMargin = v.context.dp2px(30)
                     binding?.floatContainer?.addView(expendView,params)
